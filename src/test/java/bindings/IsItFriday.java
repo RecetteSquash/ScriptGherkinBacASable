@@ -15,6 +15,7 @@ public class IsItFriday {
         if (today != "Friday"){
             return "Nope";
         }
+        return null;
     }
 
     @Given("^today is Sunday$")
