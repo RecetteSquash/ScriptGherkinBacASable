@@ -70,7 +70,7 @@
                 <version>${ta.cucumber.runner.version}</version>
                 <configuration>
                     <featuresList>${ta.feature}</featuresList>
-                    <squashRoot>src/test/resources</squashRoot>
+                    <squashRoot>src/test/resources/squash</squashRoot>
                     <!-- DryRunOptions for dryrun goal only -->
                     <additionnalDryRunChecks>true</additionnalDryRunChecks>
 
