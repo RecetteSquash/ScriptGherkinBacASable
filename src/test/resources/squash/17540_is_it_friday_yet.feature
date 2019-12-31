@@ -1,11 +1,10 @@
 # Automation priority: 9
 # Automation status: TRANSMITTED
 # Test case importance: LOW
-Feature: Are 1 and 1 2?
-  feature for testing TF Framework
-  
-  @TFSample
-  Scenario: add two numbers
-    Given first member is 1
-    Given second member is 1
-    Then sum should be 2
+Feature: Is it Friday yet?
+  Everybody wants to know when it's Friday
+
+  Scenario: Sunday isn't Friday
+    Given today is Sunday
+    When I ask whether it's Friday yet
+    Then I should be told "Nope"
