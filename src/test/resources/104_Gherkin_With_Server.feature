@@ -14,3 +14,5 @@ Fonctionnalité: Gherkin With Server
 		| Expresso		| 0.40  |
 		| Lungo				| 0.50  |
 		| Cappuccino	| 0.80  |
+
+  #---------------------TEST---------------------
