@@ -9,3 +9,4 @@ TEST_2
 	Given Hippo
 	Then Girafe
 	And Zébre
+	But Loup

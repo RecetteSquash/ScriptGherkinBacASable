@@ -5,7 +5,7 @@ Resource	squash_resources.resource
 
 *** Test Cases ***
 TEST_3
-	Given coucou
-	When bonjour
+	And coucou
+	When bonjour, hello
 	Then au revoir
 	But byebye
