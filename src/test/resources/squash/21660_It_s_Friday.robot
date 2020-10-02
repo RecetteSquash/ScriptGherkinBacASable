@@ -5,6 +5,6 @@ Resource	squash_resources.resource
 
 *** Test Cases ***
 It's Friday
-	Given Today is Sunday
-	When I Ask wether it's Friday yet
-	Then I should be told "Nope"
+	Given today is Sunday
+	Given I ask whether it's Friday yet
+	Given I should be told "Nope"
