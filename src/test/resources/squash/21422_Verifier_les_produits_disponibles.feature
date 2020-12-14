@@ -19,6 +19,11 @@ Feature: Vérifier les produits disponibles
 			$4vnregz$e
 			
 			"""
+			#r $eù"e "un commentaire sur plusieurs lignes^^ 
+			#c'est rop kçr"à")
+			#rk0ef
+			#3
+			#: cfoêk
 		When je liste les produits disponibles
 			| j'ai suivi| avec accent é|
 			| hello |bonjour |
@@ -39,3 +44,7 @@ Feature: Vérifier les produits disponibles
 			les prix des produits s'affiche à droite sur l'écran
 			Le nom des produits à gauche
 			"""
+			#un commentaire
+			#par ligne
+			#ajouté
+			#
