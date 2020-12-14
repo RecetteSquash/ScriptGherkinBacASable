@@ -10,9 +10,24 @@ Feature: Vérifier les produits disponibles
 			| dog | oui |
 			| bichon | oui |
 			| berger | oui |
+			"""
+			je susi un doctring
+			sur plusieur
+			logne
+			,kdjfe
+			 dkgêez
+			$4vnregz$e
+			
+			"""
 		When je liste les produits disponibles
 			| j'ai suivi| avec accent é|
 			| hello |bonjour |
+			"""
+			docstreing  pfezn
+			
+			ndfj^zef
+			*vkmfô
+			"""
 			#Seuls les produits de la catégorie Café sont vérifiés 
 			#dans ce test
 		Then je constate que tous les produits suivants sont disponibles
