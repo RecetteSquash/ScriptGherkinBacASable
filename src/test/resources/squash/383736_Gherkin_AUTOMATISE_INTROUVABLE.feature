@@ -1,7 +1,6 @@
 # Automation priority: null
 # Test case importance: LOW
 # language: fr
-Fonctionnalité: Gherk3
 	# A l'exécution, les valeurs de paramètres entre <> seront substituées
 	# Le scénario sera joué une fois pour chaque jeu de données
 	Plan du Scénario: Vérifier la livraison des produits.
