@@ -1,5 +1,5 @@
-# Automation priority: 1500
-# Test case importance: VERY_HIGH
+# Automation priority: null
+# Test case importance: LOW
 # language: fr
 Fonctionnalité: Gherkin0
   

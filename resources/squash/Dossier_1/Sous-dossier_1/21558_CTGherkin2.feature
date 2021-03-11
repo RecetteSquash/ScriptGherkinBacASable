@@ -1,5 +1,5 @@
-# Automation priority: -355000
-# Test case importance: MEDIUM
+# Automation priority: 5000000
+# Test case importance: HIGH
 # language: fr
 Fonctionnalité: Gherkin2
 

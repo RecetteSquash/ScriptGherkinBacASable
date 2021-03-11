@@ -1,5 +1,5 @@
-# Automation priority: 1500
-# Test case importance: Very high
+# Automation priority: null
+# Test case importance: Low
 # language: en
 Feature: CTBDD0
 
