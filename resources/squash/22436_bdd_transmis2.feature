@@ -1,9 +1,9 @@
 # Automation priority: null
 # Test case importance: Low
 # language: en
-Feature: 03encours-Copie1
+Feature: bdd_transmis2
 
-	Scenario: 03encours-Copie1
+	Scenario: bdd_transmis2
 		Given test1
 		When test1
 		Then test1
