@@ -1,9 +1,9 @@
 # Automation priority: null
 # Test case importance: Low
 # language: en
-Feature: 06auto-Copie1
+Feature: bdd_encoursdauto3
 
-	Scenario: 06auto-Copie1
+	Scenario: bdd_encoursdauto3
 		Given test1
 		When test1
 		Then test1
