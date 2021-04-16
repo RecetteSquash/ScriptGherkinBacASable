@@ -1,9 +1,9 @@
 # Automation priority: null
 # Test case importance: Low
 # language: en
-Feature: 09-Copie1
+Feature: bdd_rejeté2
 
-	Scenario: 09-Copie1
+	Scenario: bdd_rejeté2
 		Given test1
 		When test1
 		Then test1
