@@ -1,9 +1,9 @@
-# Automation priority: null
-# Test case importance: Low
-# language: en
-Feature: Cas de test BDD
+# Priorité d'automatisation: null
+# Importance du cas de test: Faible
+# language: fr
+Fonctionnalité: Cas de test BDD
 
-	Scenario: Cas de test BDD
-		Given today is friday
-		When I ask if it is Sunday
-		Then You tell me no
+	Scénario: Cas de test BDD
+		Étant donné que today is friday
+		Quand I ask if it is Sunday
+		Alors You tell me no
