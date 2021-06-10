@@ -1,4 +1,4 @@
 # Priorité d'automatisation: null
 # Importance du cas de test: Moyenne
 # language: fr
-Fonctionnalité: Cas de test BDD 2
+Fonctionnalité: Cas de test BDD 7
