@@ -24,6 +24,9 @@ Vérifier les produits disponibles
 	[Setup] Test Setup
 
 	Given la machine est en marche "${docstring_1}"
+	# comm comm
+	# comm comm
+	# comm comm
 	When je liste les produits disponibles
 	# Seuls les produits de la catégorie Café sont vérifiés dans ce test
 	Then je constate que tous les produits suivants sont disponibles : "${docstring_2}"
