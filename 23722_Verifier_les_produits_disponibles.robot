@@ -18,20 +18,24 @@ Test Teardown
 
 *** Test Cases ***
 Vérifier les produits disponibles
-	${row_1_1} =	Create List	produit	prix
-	${row_1_2} =	Create List	Expresso	0.40
-	${row_1_3} =	Create List	Lungo	0.50
-	${row_1_4} =	Create List	Cappuccino	0.80
-	${datatable_1} =	Create List	${row_1_1}	${row_1_2}	${row_1_3}	${row_1_4}
-
-	${docstring_1} =	Set Variable	Le message "Choissisez votre produit" apparait.
+	${row_1_1} =	Create List	men	women
+	${row_1_2} =	Create List	IronMan	Pepper
+	${datatable_1} =	Create List	${row_1_1}	${row_1_2}
+	${row_2_1} =	Create List	Jeux Vidéo	Persos
+	${row_2_2} =	Create List	Horizon Zero Dawn	Aloy
+	${datatable_2} =	Create List	${row_2_1}	${row_2_2}
+	${row_3_1} =	Create List	produit	prix
+	${row_3_2} =	Create List	Expresso	0.40
+	${row_3_3} =	Create List	Lungo	0.50
+	${row_3_4} =	Create List	Cappuccino	0.80
+	${datatable_3} =	Create List	${row_3_1}	${row_3_2}	${row_3_3}	${row_3_4}
 
 	[Setup] Test Setup
 
-	Given la machine est en marche "${docstring_1}"
-	When je liste les produits disponibles
+	Given la machine est en marche "${datatable_1}"
+	When je liste les produits disponibles "${datatable_2}"
 	# Seuls les produits de la catégorie Café sont vérifiés dans ce test
-	Then je constate que tous les produits suivants sont disponibles : "${datatable_1}"
+	Then je constate que tous les produits suivants sont disponibles : "${datatable_3}"
 	# Le nom des produits doivent s'afficher en gras et le prix en rouge
 
 	[Teardown] Test Teardown
