@@ -1,4 +1,4 @@
-# Automation priority: 10
+# Automation priority: null
 # Test case importance: Very high
 *** Settings ***
 Resource	squash_resources.resource
@@ -6,18 +6,18 @@ Resource	squash_resources.resource
 *** Keywords ***
 Test Setup
 	${_TEST_SETUP}	Get Variable Value	${TEST SETUP}
-	${_TEST_23722_SETUP}	Get Variable Value	${TEST 23722 SETUP}
+	${_TEST_23768_SETUP}	Get Variable Value	${TEST 23768 SETUP}
 	Run Keyword If	${_TEST_SETUP} is not None	${_TEST_SETUP}
-	Run Keyword If	${_TEST_23722_SETUP} is not None	${_TEST_23722_SETUP}
+	Run Keyword If	${_TEST_23768_SETUP} is not None	${_TEST_23768_SETUP}
 
 Test Teardown
 	${_TEST_TEARDOWN}	Get Variable Value	${TEST TEARDOWN}
-	${_TEST_23722_TEARDOWN}	Get Variable Value	${TEST 23722 TEARDOWN}
+	${_TEST_23768_TEARDOWN}	Get Variable Value	${TEST 23768 TEARDOWN}
 	Run Keyword If	${_TEST_TEARDOWN} is not None	${_TEST_TEARDOWN}
-	Run Keyword If	${_TEST_23722_TEARDOWN} is not None	${_TEST_23722_TEARDOWN}
+	Run Keyword If	${_TEST_23768_TEARDOWN} is not None	${_TEST_23768_TEARDOWN}
 
 *** Test Cases ***
-Vérifier les produits disponibles
+Vérifier les produits disponibles cp
 	${docstring_1} =	Set Variable	Le message "Choissisez votre produit" apparait.
 	${docstring_2} =	Set Variable	Docstring non pris en compte à cause de la datatable\nDocstring non pris en compte à cause de la datatable\nDocstring non pris en compte à cause de la datatable\nDocstring non pris en compte à cause de la datatable
 
