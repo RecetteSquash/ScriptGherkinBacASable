@@ -1,5 +1,5 @@
-# Priorité d'automatisation: null
-# Importance du cas de test: Faible
+# Priorité d'automatisation: 10
+# Importance du cas de test: Haute
 # language: fr
 Fonctionnalité: Vérifier que la machine est disponible
 
