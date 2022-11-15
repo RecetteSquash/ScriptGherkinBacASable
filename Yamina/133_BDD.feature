@@ -5,6 +5,6 @@ Fonctionnalité: BDD
 
 	Scénario: BDD
 		Étant donné que test avec "agd"
-		Étant donné que test avec 15
-		Étant donné que test avec 15
-		Étant donné que voilà un test avec un 15
+		Étant donné que test avec "15"
+		Étant donné que test avec "15"
+		Étant donné que voilà un test avec un "15"
