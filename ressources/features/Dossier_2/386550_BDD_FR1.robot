@@ -4,7 +4,7 @@ Resource    squash_resources.resource
 
 
 *** Test Cases ***
-BDD RF3 A
+BDD FR1
     [Setup]    Test Setup
 
     Given Je rédige un cas de test
