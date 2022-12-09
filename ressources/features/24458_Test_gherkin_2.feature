@@ -1,5 +1,5 @@
 # language: fr
-Fonctionnalité: Test gherkin 2
+Fonctionnalité: testnomfeature
   
   
   	Scénario: Vérifier que la machine est disponible.
