@@ -17,6 +17,6 @@ Test Teardown
 	Run Keyword If	$__TEST_TEARDOWN is not None	${__TEST_TEARDOWN}
 
 *** Test Cases ***
-BDD
+BDD1
 	[Setup]	Test Setup
 	[Teardown]	Test Teardown
