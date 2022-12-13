@@ -1,5 +1,5 @@
 # Automation priority: null
-# Test case importance: LOW
+# Test case importance: HIGH
 # language: fr
 Fonctionnalité: CasG2
  Etant donné que je suis un cafeinomane
