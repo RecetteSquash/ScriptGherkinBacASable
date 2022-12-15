@@ -1,5 +1,5 @@
 # language: fr
-Fonctionnalité: feature-1
+Fonctionnalité: feature 1
   
   	Scénario: Vérifier les produits disponibles.
 		Etant donné que la machine est en marche.
