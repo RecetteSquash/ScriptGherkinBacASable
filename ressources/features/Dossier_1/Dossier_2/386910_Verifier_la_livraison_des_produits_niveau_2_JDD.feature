@@ -1,23 +1,23 @@
-# language: fr
-Fonctionnalité: Vérifier la livraison des produits niveau 2 JDD
+# language: en
+Feature: Vérifier la livraison des produits niveau 2 JDD
 
-	Plan du scénario: Vérifier la livraison des produits niveau 2 JDD
-		Étant donné que la machine est en marche.
-		Et mon solde est au moins de <prix>.
-		Quand je sélectionne le <produit>.
-		Alors la machine me sert un <produit> et mon compte est débité de <prix>.
+	Scenario Outline: Vérifier la livraison des produits niveau 2 JDD
+		Given la machine est en marche.
+		And mon solde est au moins de <prix>.
+		When je sélectionne le <produit>.
+		Then la machine me sert un <produit> et mon compte est débité de <prix>.
 
 		@JDD_Cappûcînô
-		Exemples:
+		Examples:
 		| prix | produit |
 		| 1 | "Cappûcînô" |
 
 		@JDD_Exrpresso
-		Exemples:
+		Examples:
 		| prix | produit |
 		| 0.4 | "exrpresso" |
 
 		@JDD_Lungo
-		Exemples:
+		Examples:
 		| prix | produit |
 		| 0.5 | "lungo" |
