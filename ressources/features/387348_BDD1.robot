@@ -12,6 +12,9 @@ Test Teardown    Test Teardown
 BDD1
     [Documentation]    BDD1
 
+    Given un utilisateur
+    When petit pataton
+
 
 *** Keywords ***
 Test Setup
