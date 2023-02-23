@@ -1,5 +1,7 @@
 *** Settings ***
 Documentation    Vérifier que la machine est disponible
+...
+...              Ce test vérifie que la machine affiche le bon solde.
 Metadata         ID                           26127
 Metadata         Automation priority          null
 Metadata         Test case importance         Low
