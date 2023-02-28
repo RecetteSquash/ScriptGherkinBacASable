@@ -1,2 +1,2 @@
 # language: fr
-Fonctionnalité: Vérifier que la machine est disponible
+Fonctionnalité: Nom de la feature
