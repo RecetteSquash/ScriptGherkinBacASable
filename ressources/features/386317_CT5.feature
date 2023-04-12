@@ -2,6 +2,6 @@
 Feature: CT5
 
 	Scenario: CT5
-		Given un utilisateur lançant ce cas de test
+		Given un utilisateur lançant ce cas de test bzetg
 		When j'execute ce cas de test de prio moyenne
 		Then ce cas de test est exécuté
