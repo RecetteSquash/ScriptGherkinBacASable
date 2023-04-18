@@ -1,19 +1,23 @@
 *** Settings ***
-Documentation    CRTR BDD
+Documentation    Vérifier que la machine est disponible
+...
+...              Ce cas de test vérifie la disponibilité de la machine
 Metadata         ID                           386629
-Metadata         Automation priority          null
-Metadata         Test case importance         Low
+Metadata         Reference                    VERIF_001
+Metadata         Automation priority          10
+Metadata         Test case importance         Very high
 Resource         squash_resources.resource
 Test Setup       Test Setup
 Test Teardown    Test Teardown
 
 
 *** Test Cases ***
-CRTR BDD
-    [Documentation]    CRTR BDD
+Vérifier que la machine est disponible
+    [Documentation]    Vérifier que la machine est disponible
 
-    Given rh
-    When dfghj
+    Given la machine est branchée.
+    When je passe mon badge.
+    Then je constate que mon solde s'affiche.
 
 
 *** Keywords ***

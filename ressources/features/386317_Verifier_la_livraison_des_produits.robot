@@ -1,8 +1,12 @@
 *** Settings ***
 Documentation    Vérifier la livraison des produits
+...
+...              Ce cas de test vérifie la livraison des produits depuis la machine 
+...              fonctionne : le nom du produit ainsi que son prix sont corrects.
 Metadata         ID                           386317
-Metadata         Automation priority          25
-Metadata         Test case importance         Medium
+Metadata         Reference                    VERIF_002
+Metadata         Automation priority          5
+Metadata         Test case importance         High
 Resource         squash_resources.resource
 Library          squash_tf.TFParamService
 Test Setup       Test Setup
@@ -16,7 +20,7 @@ Vérifier la livraison des produits
     &{dataset} =    Retrieve Dataset
 
     Given la machine est en marche.
-    And mon solde est au moins de "${dataset}[prix]".
+    And mon "solde" est au moins de "${dataset}[prix]".
     When je sélectionne le "${dataset}[produit]".
     Then la machine me sert un "${dataset}[produit]" et mon compte est débité de "${dataset}[prix]".
 
