@@ -1,7 +1,7 @@
 # language: en
-Feature: Vérifier la livraison des produits en cucu
+Feature: Vérifier la livraison des produits en cucudepuis autom
 
-	Scenario Outline: Vérifier la livraison des produits en cucu
+	Scenario Outline: Vérifier la livraison des produits en cucudepuis autom
 		Given la machine est en marche
 		And mon "solde" est au moins de <prix>.
 		When je sélectionne le <produit>.
