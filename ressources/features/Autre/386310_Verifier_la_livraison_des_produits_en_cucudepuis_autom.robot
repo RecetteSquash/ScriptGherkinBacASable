@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Vérifier la livraison des produits en cucu
+Documentation    Vérifier la livraison des produits en cucudepuis autom
 ...
 ...              Ce cas de test vérifie la livraison des produits depuis la machine 
 ...              fonctionne : le nom du produit ainsi que son prix sont corrects.
@@ -14,8 +14,8 @@ Test Teardown    Test Teardown
 
 
 *** Test Cases ***
-Vérifier la livraison des produits en cucu
-    [Documentation]    Vérifier la livraison des produits en cucu
+Vérifier la livraison des produits en cucudepuis autom
+    [Documentation]    Vérifier la livraison des produits en cucudepuis autom
 
     &{dataset} =    Retrieve Dataset
 
