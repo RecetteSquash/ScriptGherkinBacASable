@@ -13,12 +13,11 @@ Vérifier les produits disponible
     [Documentation]    Vérifier les produits disponible
 
     &{datatables} =    Retrieve Datatables
-    &{docstrings} =    Retrieve Docstrings
 
-    Given la machine est en marche "${docstrings}[docstring_1]"
+    Given la machine est en marche "${datatables}[datatable_1]"
     When je liste les produits disponibles.
     # Seuls les produits de la catégorie Café sont vérifiés dans ce test     
-    Then je constate que tous les produits suivants sont disponibles : "${datatables}[datatable_1]"
+    Then je constate que tous les produits suivants sont disponibles : "${datatables}[datatable_2]"
     # Vérifier un commentaire + une table de données  
 
 
@@ -76,34 +75,16 @@ Retrieve Datatables
     ...                with each datatable name as key, and each datatable list as value :
     ...                &{datatables} =    Create Dictionary    datatable_1=${datatable_1}    datatable_2=${datatable_2}
 
-    @{row_1_1} =    Create List    produit       prix
-    @{row_1_2} =    Create List    Expresso      0.40
-    @{row_1_3} =    Create List    Lungo         0.50
-    @{row_1_4} =    Create List    Cappuccino    0.80
-    @{datatable_1} =    Create List    ${row_1_1}    ${row_1_2}    ${row_1_3}    ${row_1_4}
+    @{row_1_1} =    Create List    produit     prix
+    @{row_1_2} =    Create List    Expresso    0.40
+    @{datatable_1} =    Create List    ${row_1_1}    ${row_1_2}
 
-    &{datatables} =    Create Dictionary    datatable_1=${datatable_1}
+    @{row_2_1} =    Create List    produit       prix
+    @{row_2_2} =    Create List    Expresso      0.40
+    @{row_2_3} =    Create List    Lungo         0.50
+    @{row_2_4} =    Create List    Cappuccino    0.80
+    @{datatable_2} =    Create List    ${row_2_1}    ${row_2_2}    ${row_2_3}    ${row_2_4}
+
+    &{datatables} =    Create Dictionary    datatable_1=${datatable_1}    datatable_2=${datatable_2}
 
     RETURN    &{datatables}
-
-Retrieve Docstrings
-    [Documentation]    Retrieves Squash TM's docstrings and stores them in a dictionary.
-    ...
-    ...                For instance, two docstrings have been defined in Squash TM,
-    ...                the first one containing the string
-    ...                "I am the
-    ...                FIRST    docstring",
-    ...                the second one containing the string "I am the second docstring"
-    ...
-    ...                First, this keyword retrieves values and converts them to an inline string :
-    ...                ${docstring_1} =    Set Variable    I am the\nFIRST\tdocstring"
-    ...
-    ...                Then, this keyword stores the docstrings into the &{docstrings} dictionary
-    ...                with each docstring name as key, and each docstring value as value :
-    ...                ${docstrings} =    Create Dictionary    docstring_1=${docstring_1}    docstring_2=${docstring_2}
-
-    ${docstring_1} =    Set Variable     Docstring : Le message "Choisissez votre produit" apparait.
-
-    &{docstrings} =    Create Dictionary    docstring_1=${docstring_1}
-
-    RETURN    &{docstrings}
