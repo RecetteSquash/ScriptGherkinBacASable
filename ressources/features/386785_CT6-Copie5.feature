@@ -1,7 +1,7 @@
-# language: de
-Funktionalität: CT6-Copie5
+# language: en
+Feature: CT6-Copie5
 
-	Szenario: CT6-Copie5
-		Gegeben sei je suis utilisateur
-		Wenn je lance ce cas de test de prio haute
-		Dann ce cas de test est exécuté
+	Scenario: CT6-Copie5
+		Given je suis utilisateur
+		When je lance ce cas de test de prio haute
+		Then ce cas de test est exécuté
